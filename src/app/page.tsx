@@ -1,95 +1,160 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from 'next/link';
+import LatarBelakang from './components/LatarBelakang';
+import Tujuan from './components/Tujuan';
+
+const glorifikasiProker = [
+  {
+    title: "Pendataan Perpustakaan",
+    desc: "Menyiapkan daftar aspek, mengamati kondisi, mendata koleksi & sarana.",
+    slug: "pendataan",
+    img: "latar.png",
+  },
+  {
+    title: "Pengelolaan Perpustakaan",
+    desc: "Menganalisis pendataan, menata ruang & koleksi, menyiapkan program literasi.",
+    slug: "pengelolaan",
+    img: "latar.png",
+  },
+  {
+    title: "Layanan Perpustakaan",
+    desc: "Mahasiswa terlibat langsung membantu layanan pinjam & kunjungan.",
+    slug: "layanan",
+    img: "latar.png",
+  },
+  {
+    title: "Bacakan Saya Buku",
+    desc: "Membacakan buku cerita dengan ekspresi, berdiskusi dengan anak-anak.",
+    slug: "bacakan",
+    img: "latar.png",
+  },
+  {
+    title: "Membaca Nyaring",
+    desc: "Membaca buku cerita bersama anak-anak di perpustakaan.",
+    slug: "nyaring",
+    img: "latar.png",
+  },
+  {
+    title: "Cerdas Mengulas Buku",
+    desc: "Anak membaca di rumah, lalu menceritakan kembali isi buku.",
+    slug: "cerdas",
+    img: "latar.png",
+  },
+  {
+    title: "Proyek Isi Buku",
+    desc: "Membuat karya kreatif berdasarkan analisis buku bacaan.",
+    slug: "proyek",
+    img: "latar.png",
+  },
+  {
+    title: "Menulis Cerita",
+    desc: "Anak menulis cerita dari buku bacaan dengan gaya orisinal.",
+    slug: "menulis",
+    img: "latar.png",
+  },
+  {
+    title: "Kunjungan Literasi",
+    desc: "Kelas inspirasi ke sekolah: Membaca, diskusi & apresiasi.",
+    slug: "kunjungan",
+    img: "latar.png",
+  },
+  {
+    title: "Apresiasi Literasi",
+    desc: "Menampilkan karya & memberi penghargaan peserta literasi.",
+    slug: "apresiasi",
+    img: "latar.png",
+  },
+  {
+    title: "Glorifikasi Kegiatan",
+    desc: "Mahasiswa membuat konten & publikasi KKN di media sosial.",
+    slug: "publikasi",
+    img: "latar.png",
+  },
+];
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div style={{ paddingTop: '40px' }}>
+      {/* HERO */}
+      <div
+        className="position-relative d-flex align-items-center justify-content-center text-center"
+        style={{
+          height: '91vh',
+          backgroundImage: 'url(hero.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {/* Overlay transparan */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{
+            backgroundColor: 'rgba(0,0,0,0.5)',
+          }}
+        ></div>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+        {/* Konten Hero */}
+        <div className="position-relative text-white px-3">
+          <h1 className="display-4 fw-bold mb-3">
+            KKN Tematik Literasi <br /> Penguatan budaya literasi untuk peningkatan kesejahteraan masyarakat Kelompok 321
+            universitas sebelas maret (UNS)
+          </h1>
+          <p className="lead mb-4">
+            Desa Bentakan, Kecamatan Baki, Kabupaten Sukoharjo
+          </p>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      {/* Video YouTube */}
+      <div className="container my-5">
+        <div className="d-flex justify-content-center">
+          <iframe
+            width="840"
+            height="472"
+            className="rounded"
+            src="https://www.youtube.com/embed/t5dhaF1LFSU?si=mMdZqQC4R727TUi9"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+
+      {/* LATAR BELAKANG */}
+      <div className='container bg-light-subtle rounded'>
+        <LatarBelakang />
+      </div>
+
+      {/* TUJUAN */}
+      <div className='container bg-light-subtle rounded'>
+        <Tujuan />
+      </div>
+
+      <div id="glorifikasi" className="container bg-light-subtle my-5 py-5 rounded" data-aos="fade-up">
+        <h1 className="mb-4 text-center fw-bold mb-5">Glorifikasi Kegiatan</h1>
+        <div className="row">
+          {glorifikasiProker.map((item, index) => (
+            <div className="col-md-4 mb-4" key={index}>
+              <div className="card border-0 shadow-sm h-100 glorifikasi-card">
+                <div className="overflow-hidden">
+                  <img
+                    src={`/${item.img}`}
+                    className="card-img-top img-fluid"
+                    alt={item.title}
+                  />
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold">{item.title}</h5>
+                  <p className="card-text text-muted">{item.desc}</p>
+                  <Link href={`/glorifikasi/${item.slug}`} className="btn btn-success">
+                    Lihat Detail
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
