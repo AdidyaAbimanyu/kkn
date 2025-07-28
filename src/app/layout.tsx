@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           className="position-fixed top-0 start-0 w-100 h-100"
           style={{
             backgroundImage: 'url(background.jpeg)',
-            opacity: 0.3,
+            opacity: 0.1,
             zIndex: -1,
           }}
         ></div>

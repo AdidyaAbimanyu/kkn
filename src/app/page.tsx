@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import LatarBelakang from './components/LatarBelakang';
 import Tujuan from './components/Tujuan';
+import Tim from './components/Tim';
 
 const glorifikasiProker = [
   {
@@ -115,6 +116,7 @@ export default function Home() {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
+            loading='lazy'
             allowFullScreen
           ></iframe>
         </div>
@@ -130,7 +132,12 @@ export default function Home() {
         <Tujuan />
       </div>
 
-      <div id="glorifikasi" className="container bg-light-subtle my-5 py-5 rounded" data-aos="fade-up">
+      {/* TIM KAMI */}
+      <div className='container mt-5 pt-5 data-aos="fade-up" id="tim">'>
+        <Tim />
+      </div>
+
+      <div id="glorifikasi" className="container my-5 py-5" data-aos="fade-up">
         <h1 className="mb-4 text-center fw-bold mb-5">Glorifikasi Kegiatan</h1>
         <div className="row">
           {glorifikasiProker.map((item, index) => (

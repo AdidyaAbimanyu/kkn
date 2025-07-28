@@ -58,7 +58,7 @@ export default function Navbar() {
           <Image
             src="/logo-dikti.png"
             alt="Logo Dikti"
-            width={120}
+            width={150}
             height={40}
             className="me-2"
           />
@@ -97,29 +97,19 @@ export default function Navbar() {
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}
               >
-                Glorifikasi
+                Glorifikasi Kegiatan
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                href="/tentangkami"
+                href="#tim"
                 className="nav-link text-white"
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}
               >
-                Tentang Kami
+                Anggota Tim
               </Link>
             </li>
-            {/* <li className="nav-item">
-              <Link
-                href="#glorifikasi"
-                className="nav-link text-white"
-                onMouseEnter={handleHover}
-                onMouseLeave={handleLeave}
-              >
-                Glorifikasi
-              </Link>
-            </li> */}
 
             {/* Bubble Indicator */}
             <div ref={indicatorRef} className="nav-indicator"></div>

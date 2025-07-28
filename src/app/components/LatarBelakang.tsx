@@ -16,7 +16,7 @@ export default function LatarBelakang() {
     const centerX = rect.width / 2
     const centerY = rect.height / 2
 
-    const moveX = ((x - centerX) / centerX) * 10 // max 10deg miring
+    const moveX = ((x - centerX) / centerX) * 10
     const moveY = ((y - centerY) / centerY) * 10
 
     img.style.transform = `rotateY(${moveX * 1.2}deg) rotateX(${-moveY * 1.2}deg) scale(1.05)`
