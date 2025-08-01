@@ -50,7 +50,7 @@ export default function LatarBelakang() {
         >
           <img
             ref={imgRef}
-            src="latar.png"
+            src="static/latar.png"
             alt="Latar Belakang"
             className="img-fluid rounded"
             style={{ transition: 'transform 0.2s ease' }}

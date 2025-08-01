@@ -1,0 +1,251 @@
+[
+    {
+        "title": "Orientasi untuk pemantapan program kerja",
+        "desc": "Mengidentifikasi kondisi aktual perpustakaan, kesiapan sumber daya, serta potensi dan tantangan yang akan dihadapi. Diharapkan dari hasil ini, mahasiswa dapat menyusun dan menyesuaikan program kerja literasi sesuai kebutuhan dan karakteristik wilayah.",
+        "slug": "pengenalan",
+        "img": "orientasi/hero.jpg",
+        "penanggung_jawab": "KKN Kelompok 321 UNS",
+        "documentation": [
+            {
+                "img": "orientasi/1.jpg",
+                "caption": "Suasana orientasi awal"
+            }
+        ]
+    },
+    {
+        "title": "Pemaparan Kegiatan KKN Tematik Literasi ke Perangkat Desa",
+        "desc": "Menilai efektivitas kegiatan pemaparan program kerja kepada perangkat desa sebagai bagian dari proses penyelarasan dan persetujuan program KKN Tematik Literasi berbasis kondisi dan kebutuhan perpustakaan desa.",
+        "slug": "pemaparan",
+        "img": "pemaparan/hero.jpg",
+        "penanggung_jawab": "KKN Kelompok 321 UNS",
+        "documentation": [
+            {
+                "img": "pemaparan/1.jpg",
+                "caption": "Presentasi kepada perangkat desa"
+            },
+            {
+                "img": "pemaparan/2.jpg",
+                "caption": "Diskusi dengan kepala desa"
+            },
+            {
+                "img": "pemaparan/3.jpg",
+                "caption": "Diskusi dengan kepala desa"
+            },
+            {
+                "img": "pemaparan/4.jpg",
+                "caption": "Diskusi dengan kepala desa"
+            },
+            {
+                "img": "pemaparan/5.jpg",
+                "caption": "Diskusi dengan kepala desa"
+            },
+            {
+                "img": "pemaparan/7.jpg",
+                "caption": "Diskusi dengan kepala desa"
+            },
+            {
+                "img": "pemaparan/8.jpg",
+                "caption": "Diskusi dengan kepala desa"
+            },
+            {
+                "img": "pemaparan/9.jpg",
+                "caption": "Diskusi dengan kepala desa"
+            },
+            {
+                "img": "pemaparan/10.jpg",
+                "caption": "Diskusi dengan kepala desa"
+            },
+            {
+                "img": "pemaparan/11.jpg",
+                "caption": "Diskusi dengan kepala desa"
+            }
+        ]
+    },
+    {
+        "title": "Pendataan Perpustakaan",
+        "desc": "Menggali kondisi aktual perpustakaan desa untuk mendukung proses pendataan berbasis wilayah dan penyusunan kebutuhan serta koleksi perpustakaan.",
+        "slug": "pendataan",
+        "img": "pendataan/hero.jpg",
+        "penanggung_jawab": "Tim Survei & Data",
+        "documentation": [
+            {
+                "img": "pendataan/1.jpg",
+                "caption": "Proses pendataan koleksi buku"
+            },
+            {
+                "img": "pendataan/2.jpg",
+                "caption": "Inventarisasi fasilitas perpustakaan"
+            }
+        ]
+    },
+    {
+        "title": "Pengelolaan Perpustakaan",
+        "desc": "Menilai aspek pengelolaan perpustakaan desa untuk mengetahui sejauh mana manajemen koleksi, pengolahan bahan, sarana prasarana, SDM, serta kesiapan dalam pelaksanaan program literasi berkelanjutan.",
+        "slug": "pengelolaan",
+        "img": "static/latar.png",
+        "penanggung_jawab": "Tim Manajemen Perpustakaan",
+        "documentation": [
+            {
+                "img": "orientasi/1.jpg",
+                "caption": "Penataan koleksi perpustakaan"
+            },
+            {
+                "img": "orientasi/2.jpg",
+                "caption": "Sistem katalogisasi buku"
+            }
+        ]
+    },
+    {
+        "title": "Layanan Perpustakaan",
+        "desc": "Menilai kualitas dan aksesibilitas layanan perpustakaan yang tersedia, mencakup kenyamanan pemustaka, efektivitas pelayanan, jenis layanan yang diberikan, serta dukungan terhadap kegiatan literasi masyarakat.",
+        "slug": "layanan",
+        "img": "static/latar.png",
+        "penanggung_jawab": "Tim Layanan Publik",
+        "documentation": [
+            {
+                "img": "orientasi/1.jpg",
+                "caption": "Pelayanan peminjaman buku"
+            },
+            {
+                "img": "orientasi/2.jpg",
+                "caption": "Fasilitas baca di perpustakaan"
+            }
+        ]
+    },
+    {
+        "title": "Bacakan Saya Buku (Read Me A Book)",
+        "desc": "Menilai pelaksanaan, dampak, dan tantangen dari kegiatan Bacakan Saya Buku sebagai salah satu bentuk inovasi layanan perpustakaan desa untuk meningkatkan minat baca anak secara menyenangkan dan interaktif.",
+        "slug": "bacakan",
+        "img": "static/latar.png",
+        "penanggung_jawab": "Zulvida & Nurul",
+        "documentation": [
+            {
+                "img": "orientasi/1.jpg",
+                "caption": "Sesi membacakan cerita untuk anak-anak"
+            },
+            {
+                "img": "orientasi/2.jpg",
+                "caption": "Interaksi dengan anak-anak peserta"
+            }
+        ]
+    },
+    {
+        "title": "Membaca Nyaring",
+        "desc": "Membaca buku cerita bersama anak-anak di perpustakaan.",
+        "slug": "nyaring",
+        "img": "static/latar.png",
+        "penanggung_jawab": "Tim Literasi Anak",
+        "documentation": [
+            {
+                "img": "orientasi/1.jpg",
+                "caption": "Kegiatan membaca nyaring bersama"
+            },
+            {
+                "img": "orientasi/2.jpg",
+                "caption": "Antusiasme anak-anak dalam mendengarkan"
+            }
+        ]
+    },
+    {
+        "title": "Cerdas Mengulas Buku",
+        "desc": "Menilai kualitas kegiatan Cerdas Mengulas Buku, tingkat pemahaman dan partisipasi anak-anak, serta potensi kegiatan ini dalam membentuk kebiasaan membaca dan keberanian mengungkapkan gagasan",
+        "slug": "mengulas",
+        "img": "static/latar.png",
+        "penanggung_jawab": "Tim Literasi Kritis",
+        "documentation": [
+            {
+                "img": "orientasi/1.jpg",
+                "caption": "Diskusi mengulas isi buku"
+            },
+            {
+                "img": "orientasi/2.jpg",
+                "caption": "Presentasi ulasan dari peserta"
+            }
+        ]
+    },
+    {
+        "title": "Membuat Project Berbasis Isi Buku Bacaan",
+        "desc": "Mengukur pemahaman anak terhadap isi buku, keterlibatan dalam proses proyek, serta keberhasilan kegiatan dalam mendorong kreativitas dan aplikasi konsep dari bacaan ke aktivitas nyata",
+        "slug": "proyek",
+        "img": "static/latar.png",
+        "penanggung_jawab": "Tim Kreativitas",
+        "documentation": [
+            {
+                "img": "orientasi/1.jpg",
+                "caption": "Proses pembuatan proyek kreatif"
+            },
+            {
+                "img": "orientasi/2.jpg",
+                "caption": "Hasil karya anak-anak"
+            }
+        ]
+    },
+    {
+        "title": "Menulis Cerita Berbasis Isi Buku Bacaan",
+        "desc": "Mengukur pemahaman siswa terhadap isi buku yang dibaca, kemampuan menulis kreatif, serta potensi cerita yang dihasilkan sebagai refleksi interpretatif dan imajinatif terhadap bahan bacaan.",
+        "slug": "menulis",
+        "img": "static/latar.png",
+        "penanggung_jawab": "Tim Literasi Tulis",
+        "documentation": [
+            {
+                "img": "orientasi/1.jpg",
+                "caption": "Workshop menulis cerita"
+            },
+            {
+                "img": "orientasi/2.jpg",
+                "caption": "Pendampingan dalam menulis"
+            }
+        ]
+    },
+    {
+        "title": "Kunjungan Literasi ke Sekolah",
+        "desc": "Menilai pelaksanaan kegiatan Apresiasi Literasi Tingkat Desa, baik dalam bentuk Penulisan Cerita Berbasis Buku maupun Mengulas Buku, dan melihat dampaknya terhadap motivasi membaca, berkarya, serta keterlibatan masyarakat dalam mendukung budaya literasi.",
+        "slug": "kunjungan",
+        "img": "static/latar.png",
+        "penanggung_jawab": "Tim Outreach",
+        "documentation": [
+            {
+                "img": "orientasi/1.jpg",
+                "caption": "Kunjungan ke sekolah dasar"
+            },
+            {
+                "img": "orientasi/2.jpg",
+                "caption": "Sosialisasi program literasi"
+            }
+        ]
+    },
+    {
+        "title": "Apresiasi Literasi Tingkat Desa",
+        "desc": "Menilai pelaksanaan kegiatan Apresiasi Literasi Tingkat Desa, baik dalam bentuk Penulisan Cerita Berbasis Buku maupun Mengulas Buku, dan melihat dampaknya terhadap motivasi membaca, berkarya, serta keterlibatan masyarakat dalam mendukung budaya literasi.",
+        "slug": "apresiasi",
+        "img": "static/latar.png",
+        "penanggung_jawab": "Tim Event & Apresiasi",
+        "documentation": [
+            {
+                "img": "orientasi/1.jpg",
+                "caption": "Acara apresiasi literasi desa"
+            },
+            {
+                "img": "orientasi/2.jpg",
+                "caption": "Pemberian penghargaan kepada peserta"
+            }
+        ]
+    },
+    {
+        "title": "Presentasi hasil dan penutupan KKN Tematik Literasi",
+        "desc": "Teridentifikasinya kekuatan dan kelemahan program KKN Tematik Literasi yang telah dilaksanakan serta menghasilkan rekomendasi dan inovasi untuk perbaikan pengembangan program literasi desa di masa mendatang.",
+        "slug": "penutupan",
+        "img": "static/latar.png",
+        "penanggung_jawab": "Tim Koordinasi KKN",
+        "documentation": [
+            {
+                "img": "orientasi/1.jpg",
+                "caption": "Presentasi hasil kegiatan"
+            },
+            {
+                "img": "orientasi/2.jpg",
+                "caption": "Acara penutupan KKN"
+            }
+        ]
+    }
+]

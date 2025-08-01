@@ -50,7 +50,7 @@ export default function Tujuan() {
         >
           <img
             ref={imgRef}
-            src="tujuan.png"
+            src="static/tujuan.png"
             alt="Tujuan Program"
             className="img-fluid rounded"
             style={{ transition: 'transform 0.2s ease' }}

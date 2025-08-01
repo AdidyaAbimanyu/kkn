@@ -9,20 +9,30 @@ import AOSProvider from './components/AOSProvider'
 const nunito = Nunito({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'KKN Tematik Literasi',
+  title: 'KKN Tematik Literasi UNS Kelompok 321',
   description: 'Glorifikasi Kelompok KKN Tematik Literasi',
+  icons: {
+    icon: '/logo-kkn.png'
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
+      <head>
+        <link rel="icon" href="static/logo-kkn.png" type='image/png' />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        />
+      </head>
       <body className={nunito.className + " position-relative"}>
 
         {/* ✅ LAYER OVERLAY */}
         <div
           className="position-fixed top-0 start-0 w-100 h-100"
           style={{
-            backgroundImage: 'url(background.jpeg)',
+            backgroundImage: 'url(static/background.jpeg)',
             opacity: 0.1,
             zIndex: -1,
           }}

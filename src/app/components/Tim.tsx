@@ -7,16 +7,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Typewriter } from "react-simple-typewriter";
-import Tilt from "react-parallax-tilt";
+
+const dpl = {
+    jabatan: "Dosen Pembimbing Lapangan",
+    orang: [
+        {
+            nama: "Prof. Ir. Ari Handono Ramelan., M.Sc. (Hons)., Ph.D.",
+            prodi: "Dosen Pembimbing Lapangan",
+            foto: "/dpl.png",
+            foto2: "/dpl.png",
+        },
+    ],
+};
 
 const anggotaTim = [
     {
         jabatan: "Ketua",
         orang: [
             {
-                nama: "Nama Ketua",
-                prodi: "Prodi Ketua",
-                foto: "ketua.png",
+                nama: "Adidya Abimanyu",
+                prodi: "Informatika",
+                foto: "/adid1.png",
+                foto2: "/adid2.png",
             },
         ],
     },
@@ -24,9 +36,10 @@ const anggotaTim = [
         jabatan: "Sekretaris",
         orang: [
             {
-                nama: "Nama Sekretaris",
-                prodi: "Prodi Sekretaris",
-                foto: "sekretaris.png",
+                nama: "Adinda Puspita Ningrum",
+                prodi: "Pendidikan Ilmu Pengetahuan Alam",
+                foto: "/adinda1.png",
+                foto2: "/adinda2.png",
             },
         ],
     },
@@ -34,14 +47,16 @@ const anggotaTim = [
         jabatan: "Bendahara",
         orang: [
             {
-                nama: "Nama Bendahara 1",
-                prodi: "Prodi Bendahara 1",
-                foto: "bendahara1.png",
+                nama: "Nurul Mufidah",
+                prodi: "Sastra Daerah untuk Sastra Jawa",
+                foto: "/ruru1.png",
+                foto2: "/ruru2.png",
             },
             {
-                nama: "Nama Bendahara 2",
-                prodi: "Prodi Bendahara 2",
-                foto: "bendahara2.png",
+                nama: "Zulvida Laela Ardhini",
+                prodi: "Pendidikan Seni Rupa",
+                foto: "/zulvida1.png",
+                foto2: "/zulvida2.png",
             },
         ],
     },
@@ -49,14 +64,16 @@ const anggotaTim = [
         jabatan: "Humas",
         orang: [
             {
-                nama: "Nama Humas 1",
-                prodi: "Prodi Humas 1",
-                foto: "humas1.png",
+                nama: "Khalifahtur Alfi",
+                prodi: "Teknik Industri",
+                foto: "/alfi1.png",
+                foto2: "/alfi2.png",
             },
             {
-                nama: "Nama Humas 2",
-                prodi: "Prodi Humas 2",
-                foto: "humas2.png",
+                nama: "Fajri Khoirunnisa Cahya",
+                prodi: "Pendidikan Guru Sekolah Dasar",
+                foto: "/fajri1.png",
+                foto2: "/fajri2.png",
             },
         ],
     },
@@ -64,14 +81,16 @@ const anggotaTim = [
         jabatan: "PDD",
         orang: [
             {
-                nama: "Nama PDD 1",
-                prodi: "Prodi PDD 1",
-                foto: "pdd1.png",
+                nama: "Maylavaza Lilia Sugiarto",
+                prodi: "Desain Interior",
+                foto: "/lilia1.png",
+                foto2: "/lilia2.png",
             },
             {
-                nama: "Nama PDD 2",
-                prodi: "Prodi PDD 2",
-                foto: "pdd2.png",
+                nama: "Devi Nur Aeni",
+                prodi: "Pendidikan Guru Sekolah Dasar Kebumen",
+                foto: "/devi1.png",
+                foto2: "/devi2.png",
             },
         ],
     },
@@ -79,9 +98,10 @@ const anggotaTim = [
         jabatan: "Logistik",
         orang: [
             {
-                nama: "Nama Logistik",
-                prodi: "Prodi Logistik",
-                foto: "logistik.png",
+                nama: "Muhammad Akbar Fauzi",
+                prodi: "Pendidikan Jasmani, Kesehatan dan Rekreasi",
+                foto: "/akbar1.png",
+                foto2: "/akbar2.png",
             },
         ],
     },
@@ -89,11 +109,59 @@ const anggotaTim = [
 
 export default function Tim() {
     const [activeIndex, setActiveIndex] = useState(0);
+    const [hoveredPhoto, setHoveredPhoto] = useState<string | null>(null);
 
     return (
         <div id="tim" className="container my-5 py-5">
-            <h1 className="mb-5 text-center fw-bold">Tim KKN 321</h1>
+            <h1 className="mb-5 text-center fw-bold">Dosen Pembimbing Lapangan</h1>
 
+            {/* DPL */}
+            <div className="row align-items-center justify-content-center mb-5">
+                {dpl.orang.map((orang, index) => {
+                    const globalIndex = orang.nama;
+                    const isHovered = hoveredPhoto === globalIndex;
+
+                    return (
+                        <div key={index} className="col-md-6 mb-4">
+                            <div className="p-4 rounded text-center glorifikasi-card">
+                                <div
+                                    className={`flip-image-container ${isHovered ? "flipped" : ""}`}
+                                    onMouseEnter={() => setHoveredPhoto(globalIndex)}
+                                    onMouseLeave={() => setHoveredPhoto(null)}
+                                >
+                                    {/* Gambar pertama (depan) */}
+                                    <img
+                                        src={`/anggota/${orang.foto}`}
+                                        alt={orang.nama}
+                                        className="flip-image front mb-3"
+                                    />
+                                    {/* Gambar kedua (belakang) */}
+                                    <img
+                                        src={`/anggota/${orang.foto2}`}
+                                        alt={`${orang.nama} - foto 2`}
+                                        className="flip-image back mb-3"
+                                    />
+                                </div>
+                                <h2 className="fw-bold mb-2">{dpl.jabatan}</h2>
+                                <h3 className="fw-semibold">{orang.nama}</h3>
+                                <p className="text-muted">{orang.prodi}</p>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+
+            <div className='container bg-light-subtle rounded' data-aos="fade-up" id="meetourteam">
+                <img src="anggota/tim.png" alt="" className="img-fluid mb-3"
+                    style={{
+                        objectFit: "cover",
+                        borderRadius: "10px",
+                    }} />
+            </div>
+
+            <h1 className="my-5 text-center fw-bold">Anggota</h1>
+
+            {/* Swiper Tim */}
             <Swiper
                 modules={[Navigation, Pagination]}
                 navigation
@@ -101,77 +169,86 @@ export default function Tim() {
                 spaceBetween={50}
                 slidesPerView={1}
                 onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+                allowTouchMove={true}
             >
                 {anggotaTim.map((bagian, idx) => (
                     <SwiperSlide key={idx}>
                         <div className="row align-items-center justify-content-center">
-                            {bagian.orang.map((orang, index) => (
-                                <div
-                                    key={index}
-                                    className={`col-md-${bagian.orang.length > 1 ? "6" : "7"} mb-4`}
-                                >
-                                    <Tilt
-                                        scale={1.05}
-                                        tiltMaxAngleX={10}
-                                        tiltMaxAngleY={10}
-                                        transitionSpeed={500}
-                                        className="p-4 rounded text-center"
+                            {bagian.orang.map((orang, index) => {
+                                const globalIndex = orang.nama;
+                                const isHovered = hoveredPhoto === globalIndex;
+
+                                return (
+                                    <div
+                                        key={`${globalIndex}-${index}`}
+                                        className={`col-md-${bagian.orang.length > 1 ? "6" : "7"} mb-4`}
                                     >
-                                        <img
-                                            src={`${orang.foto}`}
-                                            alt={orang.nama}
-                                            className="img-fluid mb-3"
-                                            style={{
-                                                maxWidth: "250px",
-                                                objectFit: "cover",
-                                                borderRadius: "10px",
-                                            }}
-                                        />
-                                        <h2 className="fw-bold mb-2">
-                                            {activeIndex === idx ? (
-                                                <Typewriter
-                                                    words={[bagian.jabatan]}
-                                                    loop={1}
-                                                    cursor
-                                                    typeSpeed={120}
-                                                    deleteSpeed={80}
-                                                    delaySpeed={800}
+                                        <div className="p-4 rounded text-center glorifikasi-card">
+                                            <div
+                                                className={`flip-image-container ${isHovered ? "flipped" : ""}`}
+                                                onMouseEnter={() => setHoveredPhoto(globalIndex)}
+                                                onMouseLeave={() => setHoveredPhoto(null)}
+                                            >
+                                                {/* Gambar pertama (depan) */}
+                                                <img
+                                                    src={`/anggota/${orang.foto}`}
+                                                    alt={orang.nama}
+                                                    className="flip-image front mb-3"
                                                 />
-                                            ) : (
-                                                <>{bagian.jabatan}</>
-                                            )}
-                                        </h2>
-                                        <h3 className="fw-semibold">
-                                            {activeIndex === idx ? (
-                                                <Typewriter
-                                                    words={[orang.nama]}
-                                                    loop={1}
-                                                    cursor
-                                                    typeSpeed={100}
-                                                    deleteSpeed={80}
-                                                    delaySpeed={1000}
+                                                {/* Gambar kedua (belakang) */}
+                                                <img
+                                                    src={`/aib/${orang.foto2}`}
+                                                    alt={`${orang.nama} - foto 2`}
+                                                    className="flip-image back mb-3"
                                                 />
-                                            ) : (
-                                                <>{orang.nama}</>
-                                            )}
-                                        </h3>
-                                        <p className="text-muted">
-                                            {activeIndex === idx ? (
-                                                <Typewriter
-                                                    words={[orang.prodi]}
-                                                    loop={1}
-                                                    cursor
-                                                    typeSpeed={90}
-                                                    deleteSpeed={70}
-                                                    delaySpeed={1200}
-                                                />
-                                            ) : (
-                                                <>{orang.prodi}</>
-                                            )}
-                                        </p>
-                                    </Tilt>
-                                </div>
-                            ))}
+                                            </div>
+
+                                            <h2 className="fw-bold mb-2">
+                                                {activeIndex === idx ? (
+                                                    <Typewriter
+                                                        words={[bagian.jabatan]}
+                                                        loop={1}
+                                                        cursor
+                                                        typeSpeed={120}
+                                                        deleteSpeed={80}
+                                                        delaySpeed={800}
+                                                    />
+                                                ) : (
+                                                    <>{bagian.jabatan}</>
+                                                )}
+                                            </h2>
+                                            <h3 className="fw-semibold">
+                                                {activeIndex === idx ? (
+                                                    <Typewriter
+                                                        words={[orang.nama]}
+                                                        loop={1}
+                                                        cursor
+                                                        typeSpeed={100}
+                                                        deleteSpeed={80}
+                                                        delaySpeed={1000}
+                                                    />
+                                                ) : (
+                                                    <>{orang.nama}</>
+                                                )}
+                                            </h3>
+                                            <p className="text-muted">
+                                                {activeIndex === idx ? (
+                                                    <Typewriter
+                                                        words={[orang.prodi]}
+                                                        loop={1}
+                                                        cursor
+                                                        typeSpeed={90}
+                                                        deleteSpeed={70}
+                                                        delaySpeed={1200}
+                                                    />
+                                                ) : (
+                                                    <>{orang.prodi}</>
+                                                )}
+                                            </p>
+                                        </div>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </SwiperSlide>
                 ))}

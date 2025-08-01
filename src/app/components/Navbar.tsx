@@ -42,28 +42,28 @@ export default function Navbar() {
         {/* Kiri: Logo */}
         <Link className="navbar-brand d-flex align-items-center" href="/">
           <Image
-            src="/logo-perpusnas.svg"
+            src="/static/logo-perpusnas.svg"
             alt="Logo Perpusnas"
             width={40}
             height={40}
             className="me-2"
           />
           <Image
-            src="/logo-uns-biru.png"
+            src="/static/logo-uns-biru.png"
             alt="Logo UNS"
             width={40}
             height={40}
             className="me-2"
           />
           <Image
-            src="/logo-dikti.png"
+            src="/static/logo-dikti.png"
             alt="Logo Dikti"
             width={150}
             height={40}
             className="me-2"
           />
           <Image
-            src="/logo-kkn.png"
+            src="/static/logo-kkn.png"
             alt="Logo KKN"
             width={40}
             height={40}
