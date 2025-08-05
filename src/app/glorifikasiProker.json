@@ -66,7 +66,7 @@
         "desc": "Menggali kondisi aktual perpustakaan desa untuk mendukung proses pendataan berbasis wilayah dan penyusunan kebutuhan serta koleksi perpustakaan.",
         "slug": "pendataan",
         "img": "pendataan/hero.jpg",
-        "penanggung_jawab": "Tim Survei & Data",
+        "penanggung_jawab": "Zulvida & Nurul",
         "documentation": [
             {
                 "img": "pendataan/1.jpg",
@@ -83,7 +83,7 @@
         "desc": "Menilai aspek pengelolaan perpustakaan desa untuk mengetahui sejauh mana manajemen koleksi, pengolahan bahan, sarana prasarana, SDM, serta kesiapan dalam pelaksanaan program literasi berkelanjutan.",
         "slug": "pengelolaan",
         "img": "static/latar.png",
-        "penanggung_jawab": "Tim Manajemen Perpustakaan",
+        "penanggung_jawab": "Zulvida & Nurul",
         "documentation": [
             {
                 "img": "orientasi/1.jpg",
@@ -100,7 +100,7 @@
         "desc": "Menilai kualitas dan aksesibilitas layanan perpustakaan yang tersedia, mencakup kenyamanan pemustaka, efektivitas pelayanan, jenis layanan yang diberikan, serta dukungan terhadap kegiatan literasi masyarakat.",
         "slug": "layanan",
         "img": "static/latar.png",
-        "penanggung_jawab": "Tim Layanan Publik",
+        "penanggung_jawab": "Zulvida & Nurul",
         "documentation": [
             {
                 "img": "orientasi/1.jpg",
@@ -116,15 +116,15 @@
         "title": "Bacakan Saya Buku (Read Me A Book)",
         "desc": "Menilai pelaksanaan, dampak, dan tantangen dari kegiatan Bacakan Saya Buku sebagai salah satu bentuk inovasi layanan perpustakaan desa untuk meningkatkan minat baca anak secara menyenangkan dan interaktif.",
         "slug": "bacakan",
-        "img": "static/latar.png",
-        "penanggung_jawab": "Zulvida & Nurul",
+        "img": "bacakan/hero.jpg",
+        "penanggung_jawab": "Adinda",
         "documentation": [
             {
-                "img": "orientasi/1.jpg",
+                "img": "bacakan/1.jpg",
                 "caption": "Sesi membacakan cerita untuk anak-anak"
             },
             {
-                "img": "orientasi/2.jpg",
+                "img": "bacakan/2.jpg",
                 "caption": "Interaksi dengan anak-anak peserta"
             }
         ]
@@ -133,15 +133,27 @@
         "title": "Membaca Nyaring",
         "desc": "Membaca buku cerita bersama anak-anak di perpustakaan.",
         "slug": "nyaring",
-        "img": "static/latar.png",
+        "img": "membaca/hero.jpg",
         "penanggung_jawab": "Tim Literasi Anak",
         "documentation": [
             {
-                "img": "orientasi/1.jpg",
+                "img": "membaca/1.jpg",
                 "caption": "Kegiatan membaca nyaring bersama"
             },
             {
-                "img": "orientasi/2.jpg",
+                "img": "membaca/2.jpg",
+                "caption": "Antusiasme anak-anak dalam mendengarkan"
+            },
+            {
+                "img": "membaca/3.jpg",
+                "caption": "Antusiasme anak-anak dalam mendengarkan"
+            },
+            {
+                "img": "membaca/4.jpg",
+                "caption": "Antusiasme anak-anak dalam mendengarkan"
+            },
+            {
+                "img": "membaca/5.jpg",
                 "caption": "Antusiasme anak-anak dalam mendengarkan"
             }
         ]

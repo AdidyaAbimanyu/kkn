@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -113,7 +114,7 @@ export default function Tim() {
 
     return (
         <div id="tim" className="container my-5 py-5">
-            <h1 className="mb-5 text-center fw-bold">Dosen Pembimbing Lapangan</h1>
+            <h1 className="mb-2 text-center fw-bold">Dosen Pembimbing Lapangan</h1>
 
             {/* DPL */}
             <div className="row align-items-center justify-content-center mb-5">
@@ -130,13 +131,13 @@ export default function Tim() {
                                     onMouseLeave={() => setHoveredPhoto(null)}
                                 >
                                     {/* Gambar pertama (depan) */}
-                                    <img
+                                    <Image
                                         src={`/anggota/${orang.foto}`}
                                         alt={orang.nama}
                                         className="flip-image front mb-3"
                                     />
                                     {/* Gambar kedua (belakang) */}
-                                    <img
+                                    <Image
                                         src={`/anggota/${orang.foto2}`}
                                         alt={`${orang.nama} - foto 2`}
                                         className="flip-image back mb-3"
@@ -152,14 +153,14 @@ export default function Tim() {
             </div>
 
             <div className='container bg-light-subtle rounded' data-aos="fade-up" id="meetourteam">
-                <img src="anggota/tim.png" alt="" className="img-fluid mb-3"
+                <Image src="anggota/tim.png" alt="" className="img-fluid mb-3"
                     style={{
                         objectFit: "cover",
                         borderRadius: "10px",
                     }} />
             </div>
 
-            <h1 className="my-5 text-center fw-bold">Anggota</h1>
+            <h1 className="mb-2 pt-5 text-center fw-bold">Anggota</h1>
 
             {/* Swiper Tim */}
             <Swiper
@@ -190,13 +191,13 @@ export default function Tim() {
                                                 onMouseLeave={() => setHoveredPhoto(null)}
                                             >
                                                 {/* Gambar pertama (depan) */}
-                                                <img
+                                                <Image
                                                     src={`/anggota/${orang.foto}`}
                                                     alt={orang.nama}
                                                     className="flip-image front mb-3"
                                                 />
                                                 {/* Gambar kedua (belakang) */}
-                                                <img
+                                                <Image
                                                     src={`/aib/${orang.foto2}`}
                                                     alt={`${orang.nama} - foto 2`}
                                                     className="flip-image back mb-3"

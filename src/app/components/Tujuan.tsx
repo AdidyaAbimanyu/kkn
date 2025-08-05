@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
+import Image from 'next/image'
 
 export default function Tujuan() {
   const imgRef = useRef<HTMLImageElement>(null)
@@ -48,7 +49,7 @@ export default function Tujuan() {
           onMouseLeave={handleMouseLeave}
           style={{ perspective: '1000px' }}
         >
-          <img
+          <Image
             ref={imgRef}
             src="static/tujuan.png"
             alt="Tujuan Program"

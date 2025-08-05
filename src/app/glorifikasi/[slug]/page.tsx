@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import glorifikasiData from '../../glorifikasiProker.json';
 import DocumentationGallery from '../../components/DocumentationGallery';
 
@@ -9,15 +10,19 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function GlorifikasiDetail({ params }: { params: { slug: string } }) {
-  const data = glorifikasiData.find(item => item.slug === params.slug);
+// PERBAIKAN: Ubah function menjadi async dan params menjadi Promise
+export default async function GlorifikasiDetail({ params }: { params: Promise<{ slug: string }> }) {
+  // PERBAIKAN: Await params terlebih dahulu
+  const { slug } = await params;
+
+  const data = glorifikasiData.find(item => item.slug === slug);
 
   if (!data) return notFound();
 
   const documentationImages = data.documentation || [];
 
   const relatedActivities = glorifikasiData
-    .filter(item => item.slug !== params.slug)
+    .filter(item => item.slug !== slug)
     .slice(0, 3);
 
   return (
@@ -58,7 +63,7 @@ export default function GlorifikasiDetail({ params }: { params: { slug: string }
           <div className="col-lg-8">
             <div className="card border-0 shadow-lg mb-4">
               <div className="card-body p-0">
-                <img
+                <Image
                   src={`/${data.img}`}
                   alt={data.title}
                   className="img-fluid rounded-top w-100"
@@ -172,7 +177,7 @@ export default function GlorifikasiDetail({ params }: { params: { slug: string }
               {relatedActivities.map((item, index) => (
                 <div className="col-md-4 mb-4" key={index}>
                   <div className="card border-0 shadow-sm h-100">
-                    <img
+                    <Image
                       src={`/${item.img}`}
                       className="card-img-top"
                       alt={item.title}

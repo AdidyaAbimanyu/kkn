@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import LatarBelakang from './components/LatarBelakang';
 import Tujuan from './components/Tujuan';
+import Image from 'next/image';
 import Tim from './components/Tim';
 import glorifikasiData from './glorifikasiProker.json';
 
@@ -51,17 +52,20 @@ export default function Home() {
 
       {/* GLORIFIKASI */}
       <div id="glorifikasi" className="container" data-aos="fade-up">
-        <h1 className="mb-4 text-center fw-bold mb-5">Glorifikasi Kegiatan</h1>
+        <h1 className="mb-5 text-center fw-bold">Glorifikasi Kegiatan</h1>
         <div className="row">
           {glorifikasiData.map((item, index) => (
             <div className="col-md-4 mb-4" key={index}>
               <div className="card border-0 shadow-sm h-100 glorifikasi-card">
                 <div className="overflow-hidden">
-                  <img
-                    src={`/${item.img}`}
-                    className="card-img-top img-fluid"
-                    alt={item.title}
-                  />
+                  <div style={{ height: '200px', overflow: 'hidden' }}>
+                    <Image
+                      src={`/${item.img}`}
+                      alt={item.title}
+                      className="w-100 h-100"
+                      style={{ objectFit: 'cover' }}
+                    />
+                  </div>
                 </div>
                 <div className="card-body">
                   <h5 className="card-title fw-bold">{item.title}</h5>

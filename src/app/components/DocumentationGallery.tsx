@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import Image from 'next/image';
 
 interface DocumentationImage {
   img: string;
@@ -47,19 +48,6 @@ export default function DocumentationGallery({ images }: DocumentationGalleryPro
     handleImageChange(newIndex);
   };
 
-  // Auto-play functionality (optional)
-  useEffect(() => {
-    if (images.length <= 1) return;
-    
-    const interval = setInterval(() => {
-      if (!isTransitioning) {
-        nextImage();
-      }
-    }, 5000); // Auto-advance every 5 seconds
-
-    return () => clearInterval(interval);
-  }, [currentImageIndex, isTransitioning, images.length]);
-
   return (
     <div className="mt-4">
       <h5 className="fw-bold text-dark mb-3">Dokumentasi Kegiatan</h5>
@@ -71,7 +59,7 @@ export default function DocumentationGallery({ images }: DocumentationGalleryPro
               isTransitioning ? 'opacity-0 scale-105' : 'opacity-100 scale-100'
             }`}
           >
-            <img
+            <Image
               src={`/${images[currentImageIndex].img}`}
               alt={images[currentImageIndex].caption}
               className="card-img-top transition-transform duration-500 ease-out hover:scale-105"
@@ -140,7 +128,7 @@ export default function DocumentationGallery({ images }: DocumentationGalleryPro
                 }}
                 aria-label={`Lihat foto ${index + 1}: ${doc.caption}`}
               >
-                <img
+                <Image
                   src={`/${doc.img}`}
                   alt={doc.caption}
                   className="w-100 h-100 rounded transition-transform duration-300 hover:scale-110"
