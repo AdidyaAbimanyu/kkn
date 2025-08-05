@@ -116,15 +116,15 @@
         "title": "Bacakan Saya Buku (Read Me A Book)",
         "desc": "Menilai pelaksanaan, dampak, dan tantangen dari kegiatan Bacakan Saya Buku sebagai salah satu bentuk inovasi layanan perpustakaan desa untuk meningkatkan minat baca anak secara menyenangkan dan interaktif.",
         "slug": "bacakan",
-        "img": "bacakan/hero.jpg",
+        "img": "bacakan/hero.JPG",
         "penanggung_jawab": "Adinda",
         "documentation": [
             {
-                "img": "bacakan/1.jpg",
+                "img": "bacakan/1.JPG",
                 "caption": "Sesi membacakan cerita untuk anak-anak"
             },
             {
-                "img": "bacakan/2.jpg",
+                "img": "bacakan/2.JPG",
                 "caption": "Interaksi dengan anak-anak peserta"
             }
         ]
@@ -145,7 +145,7 @@
                 "caption": "Antusiasme anak-anak dalam mendengarkan"
             },
             {
-                "img": "membaca/3.jpg",
+                "img": "membaca/3.JPG",
                 "caption": "Antusiasme anak-anak dalam mendengarkan"
             },
             {
@@ -153,7 +153,7 @@
                 "caption": "Antusiasme anak-anak dalam mendengarkan"
             },
             {
-                "img": "membaca/5.jpg",
+                "img": "membaca/5.JPG",
                 "caption": "Antusiasme anak-anak dalam mendengarkan"
             }
         ]
@@ -162,15 +162,27 @@
         "title": "Cerdas Mengulas Buku",
         "desc": "Menilai kualitas kegiatan Cerdas Mengulas Buku, tingkat pemahaman dan partisipasi anak-anak, serta potensi kegiatan ini dalam membentuk kebiasaan membaca dan keberanian mengungkapkan gagasan",
         "slug": "mengulas",
-        "img": "static/latar.png",
+        "img": "mengulas/hero.JPG",
         "penanggung_jawab": "Tim Literasi Kritis",
         "documentation": [
             {
-                "img": "orientasi/1.jpg",
+                "img": "mengulas/1.JPG",
                 "caption": "Diskusi mengulas isi buku"
             },
             {
-                "img": "orientasi/2.jpg",
+                "img": "mengulas/2.JPG",
+                "caption": "Presentasi ulasan dari peserta"
+            },
+            {
+                "img": "mengulas/3.JPG",
+                "caption": "Presentasi ulasan dari peserta"
+            },
+            {
+                "img": "mengulas/4.JPG",
+                "caption": "Presentasi ulasan dari peserta"
+            },
+            {
+                "img": "mengulas/5.JPG",
                 "caption": "Presentasi ulasan dari peserta"
             }
         ]
