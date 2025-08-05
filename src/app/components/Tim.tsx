@@ -198,7 +198,7 @@ export default function Tim() {
                                                 />
                                                 {/* Gambar kedua (belakang) */}
                                                 <Image
-                                                    src={`/aib/${orang.foto2}`}
+                                                    src={`/anggota/${orang.foto2}`}
                                                     alt={`${orang.nama} - foto 2`}
                                                     className="flip-image back mb-3"
                                                 />
