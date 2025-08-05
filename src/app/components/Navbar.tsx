@@ -71,13 +71,6 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Tengah: Judul */}
-        <span
-          className="navbar-text text-white fw-bold position-absolute start-50 translate-middle-x h-100 d-flex align-items-center"
-        >
-          KKN Tematik Literasi Kelompok 321 Desa Bentakan
-        </span>
-
         {/* Kanan: Nav */}
         <button
           className="navbar-toggler"
