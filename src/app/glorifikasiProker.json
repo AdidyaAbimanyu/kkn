@@ -123,15 +123,15 @@
         "title": "Layanan Perpustakaan",
         "desc": "Menilai kualitas dan aksesibilitas layanan perpustakaan yang tersedia, mencakup kenyamanan pemustaka, efektivitas pelayanan, jenis layanan yang diberikan, serta dukungan terhadap kegiatan literasi masyarakat.",
         "slug": "layanan",
-        "img": "static/latar.png",
+        "img": "pelayanan/hero.JPG",
         "penanggung_jawab": "Zulvida & Nurul",
         "documentation": [
             {
-                "img": "orientasi/1.jpg",
+                "img": "pelayanan/1.JPG",
                 "caption": "Pelayanan peminjaman buku"
             },
             {
-                "img": "orientasi/2.jpg",
+                "img": "pelayanan/2.JPG",
                 "caption": "Fasilitas baca di perpustakaan"
             }
         ]
