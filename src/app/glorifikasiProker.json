@@ -215,15 +215,35 @@
         "title": "Membuat Proyek Berbasis Isi Buku Bacaan",
         "desc": "Mengukur pemahaman anak terhadap isi buku, keterlibatan dalam proses proyek, serta keberhasilan kegiatan dalam mendorong kreativitas dan aplikasi konsep dari bacaan ke aktivitas nyata",
         "slug": "proyek",
-        "img": "static/latar.png",
+        "img": "proyek/hero.JPG",
         "penanggung_jawab": "Tim Kreativitas",
         "documentation": [
             {
-                "img": "orientasi/1.jpg",
+                "img": "proyek/1.JPG",
                 "caption": "Proses pembuatan proyek kreatif"
             },
             {
-                "img": "orientasi/2.jpg",
+                "img": "proyek/2.JPG",
+                "caption": "Hasil karya anak-anak"
+            },
+            {
+                "img": "proyek/3.JPG",
+                "caption": "Hasil karya anak-anak"
+            },
+            {
+                "img": "proyek/4.JPG",
+                "caption": "Hasil karya anak-anak"
+            },
+            {
+                "img": "proyek/5.JPG",
+                "caption": "Hasil karya anak-anak"
+            },
+            {
+                "img": "proyek/6.JPG",
+                "caption": "Hasil karya anak-anak"
+            },
+            {
+                "img": "proyek/7.JPG",
                 "caption": "Hasil karya anak-anak"
             }
         ]
