@@ -252,15 +252,55 @@
         "title": "Menulis Cerita Berbasis Isi Buku Bacaan",
         "desc": "Mengukur pemahaman siswa terhadap isi buku yang dibaca, kemampuan menulis kreatif, serta potensi cerita yang dihasilkan sebagai refleksi interpretatif dan imajinatif terhadap bahan bacaan.",
         "slug": "menulis",
-        "img": "static/latar.png",
+        "img": "menulis/hero.JPG",
         "penanggung_jawab": "Tim Literasi Tulis",
         "documentation": [
             {
-                "img": "orientasi/1.jpg",
+                "img": "menulis/1.JPG",
                 "caption": "Workshop menulis cerita"
             },
             {
-                "img": "orientasi/2.jpg",
+                "img": "menulis/2.JPG",
+                "caption": "Pendampingan dalam menulis"
+            },
+            {
+                "img": "menulis/3.JPG",
+                "caption": "Pendampingan dalam menulis"
+            },
+            {
+                "img": "menulis/4.JPG",
+                "caption": "Pendampingan dalam menulis"
+            },
+            {
+                "img": "menulis/5.JPG",
+                "caption": "Pendampingan dalam menulis"
+            },
+            {
+                "img": "menulis/6.JPG",
+                "caption": "Pendampingan dalam menulis"
+            },
+            {
+                "img": "menulis/7.JPG",
+                "caption": "Pendampingan dalam menulis"
+            },
+            {
+                "img": "menulis/8.JPG",
+                "caption": "Pendampingan dalam menulis"
+            },
+            {
+                "img": "menulis/9.JPG",
+                "caption": "Pendampingan dalam menulis"
+            },
+            {
+                "img": "menulis/10.JPG",
+                "caption": "Pendampingan dalam menulis"
+            },
+            {
+                "img": "menulis/11.JPG",
+                "caption": "Pendampingan dalam menulis"
+            },
+            {
+                "img": "menulis/12.JPG",
                 "caption": "Pendampingan dalam menulis"
             }
         ]
