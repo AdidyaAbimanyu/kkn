@@ -82,15 +82,39 @@
         "title": "Pengelolaan Perpustakaan",
         "desc": "Menilai aspek pengelolaan perpustakaan desa untuk mengetahui sejauh mana manajemen koleksi, pengolahan bahan, sarana prasarana, SDM, serta kesiapan dalam pelaksanaan program literasi berkelanjutan.",
         "slug": "pengelolaan",
-        "img": "static/latar.png",
+        "img": "pengelolaan/hero.JPG",
         "penanggung_jawab": "Zulvida & Nurul",
         "documentation": [
             {
-                "img": "orientasi/1.jpg",
+                "img": "pengelolaan/1.JPG",
                 "caption": "Penataan koleksi perpustakaan"
             },
             {
-                "img": "orientasi/2.jpg",
+                "img": "pengelolaan/2.JPG",
+                "caption": "Sistem katalogisasi buku"
+            },
+            {
+                "img": "pengelolaan/3.JPG",
+                "caption": "Sistem katalogisasi buku"
+            },
+            {
+                "img": "pengelolaan/4.JPG",
+                "caption": "Sistem katalogisasi buku"
+            },
+            {
+                "img": "pengelolaan/5.JPG",
+                "caption": "Sistem katalogisasi buku"
+            },
+            {
+                "img": "pengelolaan/6.JPG",
+                "caption": "Sistem katalogisasi buku"
+            },
+            {
+                "img": "pengelolaan/7.JPG",
+                "caption": "Sistem katalogisasi buku"
+            },
+            {
+                "img": "pengelolaan/8.JPG",
                 "caption": "Sistem katalogisasi buku"
             }
         ]
