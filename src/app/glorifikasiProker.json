@@ -158,7 +158,7 @@
         "desc": "Membaca buku cerita bersama anak-anak di perpustakaan.",
         "slug": "nyaring",
         "img": "membaca/hero.jpg",
-        "penanggung_jawab": "Tim Literasi Anak",
+        "penanggung_jawab": "Adinda",
         "documentation": [
             {
                 "img": "membaca/1.jpg",
@@ -187,7 +187,7 @@
         "desc": "Menilai kualitas kegiatan Cerdas Mengulas Buku, tingkat pemahaman dan partisipasi anak-anak, serta potensi kegiatan ini dalam membentuk kebiasaan membaca dan keberanian mengungkapkan gagasan",
         "slug": "mengulas",
         "img": "mengulas/hero.JPG",
-        "penanggung_jawab": "Tim Literasi Kritis",
+        "penanggung_jawab": "Fajri",
         "documentation": [
             {
                 "img": "mengulas/1.JPG",
@@ -216,7 +216,7 @@
         "desc": "Mengukur pemahaman anak terhadap isi buku, keterlibatan dalam proses proyek, serta keberhasilan kegiatan dalam mendorong kreativitas dan aplikasi konsep dari bacaan ke aktivitas nyata",
         "slug": "proyek",
         "img": "proyek/hero.JPG",
-        "penanggung_jawab": "Tim Kreativitas",
+        "penanggung_jawab": "Alfi",
         "documentation": [
             {
                 "img": "proyek/1.JPG",
@@ -253,7 +253,7 @@
         "desc": "Mengukur pemahaman siswa terhadap isi buku yang dibaca, kemampuan menulis kreatif, serta potensi cerita yang dihasilkan sebagai refleksi interpretatif dan imajinatif terhadap bahan bacaan.",
         "slug": "menulis",
         "img": "menulis/hero.JPG",
-        "penanggung_jawab": "Tim Literasi Tulis",
+        "penanggung_jawab": "Devi",
         "documentation": [
             {
                 "img": "menulis/1.JPG",
@@ -310,7 +310,7 @@
         "desc": "Menilai pelaksanaan kegiatan Apresiasi Literasi Tingkat Desa, baik dalam bentuk Penulisan Cerita Berbasis Buku maupun Mengulas Buku, dan melihat dampaknya terhadap motivasi membaca, berkarya, serta keterlibatan masyarakat dalam mendukung budaya literasi.",
         "slug": "kunjungan",
         "img": "static/latar.png",
-        "penanggung_jawab": "Tim Outreach",
+        "penanggung_jawab": "Akbar",
         "documentation": [
             {
                 "img": "orientasi/1.jpg",
@@ -327,7 +327,7 @@
         "desc": "Menilai pelaksanaan kegiatan Apresiasi Literasi Tingkat Desa, baik dalam bentuk Penulisan Cerita Berbasis Buku maupun Mengulas Buku, dan melihat dampaknya terhadap motivasi membaca, berkarya, serta keterlibatan masyarakat dalam mendukung budaya literasi.",
         "slug": "apresiasi",
         "img": "static/latar.png",
-        "penanggung_jawab": "Tim Event & Apresiasi",
+        "penanggung_jawab": "Adid",
         "documentation": [
             {
                 "img": "orientasi/1.jpg",
@@ -344,7 +344,7 @@
         "desc": "Teridentifikasinya kekuatan dan kelemahan program KKN Tematik Literasi yang telah dilaksanakan serta menghasilkan rekomendasi dan inovasi untuk perbaikan pengembangan program literasi desa di masa mendatang.",
         "slug": "penutupan",
         "img": "static/latar.png",
-        "penanggung_jawab": "Tim Koordinasi KKN",
+        "penanggung_jawab": "KKN Kelompok 321 UNS",
         "documentation": [
             {
                 "img": "orientasi/1.jpg",
