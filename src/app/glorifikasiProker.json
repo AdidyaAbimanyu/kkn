@@ -309,15 +309,47 @@
         "title": "Kunjungan Literasi ke Sekolah",
         "desc": "Menilai pelaksanaan kegiatan Apresiasi Literasi Tingkat Desa, baik dalam bentuk Penulisan Cerita Berbasis Buku maupun Mengulas Buku, dan melihat dampaknya terhadap motivasi membaca, berkarya, serta keterlibatan masyarakat dalam mendukung budaya literasi.",
         "slug": "kunjungan",
-        "img": "static/latar.png",
+        "img": "kunjungan/hero.JPG",
         "penanggung_jawab": "Akbar",
         "documentation": [
             {
-                "img": "orientasi/1.jpg",
+                "img": "kunjungan/1.JPG",
                 "caption": "Kunjungan ke sekolah dasar"
             },
             {
-                "img": "orientasi/2.jpg",
+                "img": "kunjungan/2.JPG",
+                "caption": "Sosialisasi program literasi"
+            },
+            {
+                "img": "kunjungan/3.JPG",
+                "caption": "Sosialisasi program literasi"
+            },
+            {
+                "img": "kunjungan/4.JPG",
+                "caption": "Sosialisasi program literasi"
+            },
+            {
+                "img": "kunjungan/5.JPG",
+                "caption": "Sosialisasi program literasi"
+            },
+            {
+                "img": "kunjungan/6.JPG",
+                "caption": "Sosialisasi program literasi"
+            },
+            {
+                "img": "kunjungan/7.JPG",
+                "caption": "Sosialisasi program literasi"
+            },
+            {
+                "img": "kunjungan/8.JPG",
+                "caption": "Sosialisasi program literasi"
+            },
+            {
+                "img": "kunjungan/9.JPG",
+                "caption": "Sosialisasi program literasi"
+            },
+            {
+                "img": "kunjungan/10.JPG",
                 "caption": "Sosialisasi program literasi"
             }
         ]
