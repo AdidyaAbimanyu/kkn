@@ -302,6 +302,10 @@
             {
                 "img": "menulis/12.JPG",
                 "caption": "Pendampingan dalam menulis"
+            },
+            {
+                "img": "menulis/13.JPG",
+                "caption": "Pendampingan dalam menulis"
             }
         ]
     },
@@ -358,15 +362,55 @@
         "title": "Apresiasi Literasi Tingkat Desa",
         "desc": "Menilai pelaksanaan kegiatan Apresiasi Literasi Tingkat Desa, baik dalam bentuk Penulisan Cerita Berbasis Buku maupun Mengulas Buku, dan melihat dampaknya terhadap motivasi membaca, berkarya, serta keterlibatan masyarakat dalam mendukung budaya literasi.",
         "slug": "apresiasi",
-        "img": "static/latar.png",
+        "img": "apresiasi/hero.JPG",
         "penanggung_jawab": "Adid",
         "documentation": [
             {
-                "img": "orientasi/1.jpg",
+                "img": "apresiasi/1.JPG",
                 "caption": "Acara apresiasi literasi desa"
             },
             {
-                "img": "orientasi/2.jpg",
+                "img": "apresiasi/2.JPG",
+                "caption": "Pemberian penghargaan kepada peserta"
+            },
+            {
+                "img": "apresiasi/3.JPG",
+                "caption": "Pemberian penghargaan kepada peserta"
+            },
+            {
+                "img": "apresiasi/4.JPG",
+                "caption": "Pemberian penghargaan kepada peserta"
+            },
+            {
+                "img": "apresiasi/5.JPG",
+                "caption": "Pemberian penghargaan kepada peserta"
+            },
+            {
+                "img": "apresiasi/6.JPG",
+                "caption": "Pemberian penghargaan kepada peserta"
+            },
+            {
+                "img": "apresiasi/7.JPG",
+                "caption": "Pemberian penghargaan kepada peserta"
+            },
+            {
+                "img": "apresiasi/8.JPG",
+                "caption": "Pemberian penghargaan kepada peserta"
+            },
+            {
+                "img": "apresiasi/9.JPG",
+                "caption": "Pemberian penghargaan kepada peserta"
+            },
+            {
+                "img": "apresiasi/10.JPG",
+                "caption": "Pemberian penghargaan kepada peserta"
+            },
+            {
+                "img": "apresiasi/11.JPG",
+                "caption": "Pemberian penghargaan kepada peserta"
+            },
+            {
+                "img": "apresiasi/12.JPG",
                 "caption": "Pemberian penghargaan kepada peserta"
             }
         ]
