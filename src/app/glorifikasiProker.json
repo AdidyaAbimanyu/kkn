@@ -140,7 +140,7 @@
         "title": "Bacakan Saya Buku (Read Me A Book)",
         "desc": "Menilai pelaksanaan, dampak, dan tantangen dari kegiatan Bacakan Saya Buku sebagai salah satu bentuk inovasi layanan perpustakaan desa untuk meningkatkan minat baca anak secara menyenangkan dan interaktif.",
         "slug": "bacakan",
-        "img": "bacakan/hero.JPG",
+        "img": "bacakan/hero.jpg",
         "penanggung_jawab": "Adinda",
         "documentation": [
             {
@@ -149,6 +149,10 @@
             },
             {
                 "img": "bacakan/2.JPG",
+                "caption": "Interaksi dengan anak-anak peserta"
+            },
+            {
+                "img": "bacakan/3.JPG",
                 "caption": "Interaksi dengan anak-anak peserta"
             }
         ]
