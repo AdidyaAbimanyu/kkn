@@ -13,7 +13,7 @@ export default function Home() {
         className="position-relative d-flex align-items-center justify-content-center text-center"
         style={{
           height: '91vh',
-          backgroundImage: 'url(static/tower.png)',
+          backgroundImage: 'url(static/perpus.jpg)',
           backgroundPosition: 'center',
         }}
       >
