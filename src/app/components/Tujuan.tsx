@@ -51,10 +51,12 @@ export default function Tujuan() {
         >
           <Image
             ref={imgRef}
-            src="static/tujuan1.jpg"
+            src="/static/tujuan1.jpg"
             alt="Tujuan Program"
             className="img-fluid rounded"
             style={{ transition: 'transform 0.2s ease' }}
+            width={500}
+            height={300}
           />
         </div>
       </div>

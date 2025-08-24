@@ -423,15 +423,23 @@
         "title": "Presentasi hasil dan penutupan KKN Tematik Literasi",
         "desc": "Teridentifikasinya kekuatan dan kelemahan program KKN Tematik Literasi yang telah dilaksanakan serta menghasilkan rekomendasi dan inovasi untuk perbaikan pengembangan program literasi desa di masa mendatang.",
         "slug": "penutupan",
-        "img": "static/latar.png",
+        "img": "hasil/hero.JPG",
         "penanggung_jawab": "KKN Kelompok 321 UNS",
         "documentation": [
             {
-                "img": "orientasi/1.jpg",
+                "img": "hasil/1.JPG",
                 "caption": "Presentasi hasil kegiatan"
             },
             {
-                "img": "orientasi/2.jpg",
+                "img": "hasil/2.JPG",
+                "caption": "Acara penutupan KKN"
+            },
+            {
+                "img": "hasil/3.JPG",
+                "caption": "Acara penutupan KKN"
+            },
+            {
+                "img": "hasil/4.JPG",
                 "caption": "Acara penutupan KKN"
             }
         ]

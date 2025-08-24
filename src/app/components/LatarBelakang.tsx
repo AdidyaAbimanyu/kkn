@@ -51,10 +51,12 @@ export default function LatarBelakang() {
         >
           <Image
             ref={imgRef}
-            src="static/latar1.JPG"
+            src="/static/latar1.JPG"
             alt="Latar Belakang"
             className="img-fluid rounded"
             style={{ transition: 'transform 0.2s ease' }}
+            width={500}
+            height={300}
           />
         </div>
       </div>

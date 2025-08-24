@@ -85,7 +85,17 @@ export default function Navbar() {
           <ul className="navbar-nav position-relative">
             <li className="nav-item">
               <Link
-                href="#glorifikasi"
+                href="/berita"
+                className="nav-link text-white"
+                onMouseEnter={handleHover}
+                onMouseLeave={handleLeave}
+              >
+                Luaran Press Release
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                href="/#glorifikasi"
                 className="nav-link text-white"
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}
@@ -95,7 +105,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                href="#tim"
+                href="/#tim"
                 className="nav-link text-white"
                 onMouseEnter={handleHover}
                 onMouseLeave={handleLeave}

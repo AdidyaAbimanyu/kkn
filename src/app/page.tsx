@@ -64,6 +64,8 @@ export default function Home() {
                       alt={item.title}
                       className="w-100 h-100"
                       style={{ objectFit: 'cover' }}
+                      width={400}
+                      height={200}
                     />
                   </div>
                 </div>

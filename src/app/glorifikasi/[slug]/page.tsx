@@ -68,6 +68,8 @@ export default async function GlorifikasiDetail({ params }: { params: Promise<{ 
                   alt={data.title}
                   className="img-fluid rounded-top w-100"
                   style={{ height: '400px', objectFit: 'cover' }}
+                  width={800}
+                  height={400}
                 />
                 <div className="p-4">
                   <div className="d-flex align-items-center mb-3">
@@ -182,6 +184,8 @@ export default async function GlorifikasiDetail({ params }: { params: Promise<{ 
                       className="card-img-top"
                       alt={item.title}
                       style={{ height: '200px', objectFit: 'cover' }}
+                      width={400}
+                      height={200}
                     />
                     <div className="card-body d-flex flex-column">
                       <h5 className="card-title fw-bold">{item.title}</h5>

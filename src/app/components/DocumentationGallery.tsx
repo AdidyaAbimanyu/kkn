@@ -64,14 +64,11 @@ export default function DocumentationGallery({ images }: DocumentationGalleryPro
               alt={images[currentImageIndex].caption}
               className="card-img-top transition-transform duration-500 ease-out hover:scale-105"
               style={{ height: '400px', objectFit: 'cover' }}
+              width={800}
+              height={400}
             />
           </div>
           <div className="card-body">
-            {/* <p className={`card-text text-muted mb-0 transition-opacity duration-300 ${
-              isTransitioning ? 'opacity-0' : 'opacity-100'
-            }`}>
-              {images[currentImageIndex].caption}
-            </p> */}
             <small className="text-muted">
               {currentImageIndex + 1} dari {images.length} foto
             </small>
@@ -131,8 +128,10 @@ export default function DocumentationGallery({ images }: DocumentationGalleryPro
                 <Image
                   src={`/${doc.img}`}
                   alt={doc.caption}
-                  className="w-100 h-100 rounded transition-transform duration-300 hover:scale-110"
-                  style={{ objectFit: 'cover' }}
+                  width={80}
+                  height={60}
+                  className="rounded transition-transform duration-300 hover:scale-110"
+                  style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                 />
               </div>
             ))}

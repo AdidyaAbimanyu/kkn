@@ -15,8 +15,8 @@ const dpl = {
         {
             nama: "Prof. Ir. Ari Handono Ramelan., M.Sc. (Hons)., Ph.D.",
             prodi: "Dosen Pembimbing Lapangan",
-            foto: "/dpl.png",
-            foto2: "/dpl.png",
+            foto: "/anggota/dpl.png",
+            foto2: "/anggota/dpl.png",
         },
     ],
 };
@@ -28,8 +28,8 @@ const anggotaTim = [
             {
                 nama: "Adidya Abimanyu",
                 prodi: "Informatika",
-                foto: "/adid1.png",
-                foto2: "/adid2.png",
+                foto: "/anggota/adid1.png",
+                foto2: "/anggota/adid2.png",
             },
         ],
     },
@@ -39,8 +39,8 @@ const anggotaTim = [
             {
                 nama: "Adinda Puspita Ningrum",
                 prodi: "Pendidikan Ilmu Pengetahuan Alam",
-                foto: "/adinda1.png",
-                foto2: "/adinda2.png",
+                foto: "/anggota/adinda1.png",
+                foto2: "/anggota/adinda2.png",
             },
         ],
     },
@@ -50,14 +50,14 @@ const anggotaTim = [
             {
                 nama: "Nurul Mufidah",
                 prodi: "Sastra Daerah untuk Sastra Jawa",
-                foto: "/ruru1.png",
-                foto2: "/ruru2.png",
+                foto: "/anggota/ruru1.png",
+                foto2: "/anggota/ruru2.png",
             },
             {
                 nama: "Zulvida Laela Ardhini",
                 prodi: "Pendidikan Seni Rupa",
-                foto: "/zulvida1.png",
-                foto2: "/zulvida2.png",
+                foto: "/anggota/zulvida1.png",
+                foto2: "/anggota/zulvida2.png",
             },
         ],
     },
@@ -67,14 +67,14 @@ const anggotaTim = [
             {
                 nama: "Khalifahtur Alfi",
                 prodi: "Teknik Industri",
-                foto: "/alfi1.png",
-                foto2: "/alfi2.png",
+                foto: "/anggota/alfi1.png",
+                foto2: "/anggota/alfi2.png",
             },
             {
                 nama: "Fajri Khoirunnisa Cahya",
                 prodi: "Pendidikan Guru Sekolah Dasar",
-                foto: "/fajri1.png",
-                foto2: "/fajri2.png",
+                foto: "/anggota/fajri1.png",
+                foto2: "/anggota/fajri2.png",
             },
         ],
     },
@@ -84,14 +84,14 @@ const anggotaTim = [
             {
                 nama: "Maylavaza Lilia Sugiarto",
                 prodi: "Desain Interior",
-                foto: "/lilia1.png",
-                foto2: "/lilia2.png",
+                foto: "/anggota/lilia1.png",
+                foto2: "/anggota/lilia2.png",
             },
             {
                 nama: "Devi Nur Aeni",
                 prodi: "Pendidikan Guru Sekolah Dasar Kebumen",
-                foto: "/devi1.png",
-                foto2: "/devi2.png",
+                foto: "/anggota/devi1.png",
+                foto2: "/anggota/devi2.png",
             },
         ],
     },
@@ -101,8 +101,8 @@ const anggotaTim = [
             {
                 nama: "Muhammad Akbar Fauzi",
                 prodi: "Pendidikan Jasmani, Kesehatan dan Rekreasi",
-                foto: "/akbar1.png",
-                foto2: "/akbar2.png",
+                foto: "/anggota/akbar1.png",
+                foto2: "/anggota/akbar2.png",
             },
         ],
     },
@@ -130,17 +130,19 @@ export default function Tim() {
                                     onMouseEnter={() => setHoveredPhoto(globalIndex)}
                                     onMouseLeave={() => setHoveredPhoto(null)}
                                 >
-                                    {/* Gambar pertama (depan) */}
                                     <Image
-                                        src={`/anggota/${orang.foto}`}
+                                        src={orang.foto}
                                         alt={orang.nama}
                                         className="flip-image front mb-3"
+                                        width={500}
+                                        height={300}
                                     />
-                                    {/* Gambar kedua (belakang) */}
                                     <Image
-                                        src={`/anggota/${orang.foto2}`}
+                                        src={orang.foto2}
                                         alt={`${orang.nama} - foto 2`}
                                         className="flip-image back mb-3"
+                                        width={500}
+                                        height={300}
                                     />
                                 </div>
                                 <h2 className="fw-bold mb-2">{dpl.jabatan}</h2>
@@ -152,12 +154,19 @@ export default function Tim() {
                 })}
             </div>
 
-            <div className='container bg-light-subtle rounded' data-aos="fade-up" id="meetourteam">
-                <Image src="anggota/tim.png" alt="" className="img-fluid mb-3"
-                    style={{
-                        objectFit: "cover",
-                        borderRadius: "10px",
-                    }} />
+            <div
+                className="container text-center"
+                data-aos="fade-up"
+                id="meetourteam"
+            >
+                <Image
+                    src="/anggota/tim.png"
+                    alt="Tim"
+                    className="img-fluid mb-3"
+                    style={{ objectFit: "cover", borderRadius: "10px" }}
+                    width={1000}
+                    height={500}
+                />
             </div>
 
             <h1 className="mb-2 pt-5 text-center fw-bold">Anggota</h1>
@@ -190,17 +199,19 @@ export default function Tim() {
                                                 onMouseEnter={() => setHoveredPhoto(globalIndex)}
                                                 onMouseLeave={() => setHoveredPhoto(null)}
                                             >
-                                                {/* Gambar pertama (depan) */}
                                                 <Image
-                                                    src={`/anggota/${orang.foto}`}
+                                                    src={orang.foto}
                                                     alt={orang.nama}
                                                     className="flip-image front mb-3"
+                                                    width={500}
+                                                    height={300}
                                                 />
-                                                {/* Gambar kedua (belakang) */}
                                                 <Image
-                                                    src={`/anggota/${orang.foto2}`}
+                                                    src={orang.foto2}
                                                     alt={`${orang.nama} - foto 2`}
                                                     className="flip-image back mb-3"
+                                                    width={500}
+                                                    height={300}
                                                 />
                                             </div>
 
