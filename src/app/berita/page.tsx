@@ -1,10 +1,22 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function BeritaKKN() {
+    const [showToast, setShowToast] = useState(false);
+
+    // Fungsi salin link
+    const handleCopyLink = () => {
+        navigator.clipboard.writeText(window.location.href);
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 3000);
+    };
+
+    // URL berita (pakai window.location.href biar dinamis)
+    const currentUrl = typeof window !== "undefined" ? window.location.href : "";
+
     return (
         <div className="container my-5 py-3">
             <div className="row justify-content-center">
@@ -25,10 +37,44 @@ export default function BeritaKKN() {
                                 KKN Tematik Literasi Kelompok 321 Hidupkan Semangat Membaca di Desa Bentakan
                             </h2>
 
-                            {/* Meta Info */}
-                            <p className="text-muted mb-4">
-                                <i className="bi bi-calendar-event me-2"></i>7 Juli – 21 Agustus 2025 · Desa Bentakan
-                            </p>
+                            {/* Meta Info + Share Buttons */}
+                            <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                                <p className="text-muted mb-0">
+                                    <i className="bi bi-calendar-event me-2"></i>7 Juli – 21 Agustus 2025 · Desa Bentakan
+                                </p>
+                                <div className="d-flex gap-3">
+                                    <a
+                                        href={`https://api.whatsapp.com/send?text=${encodeURIComponent(currentUrl)}`}
+                                        target="_blank"
+                                        className="text-success fs-4"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <i className="bi bi-whatsapp"></i>
+                                    </a>
+                                    <a
+                                        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}`}
+                                        target="_blank"
+                                        className="text-info fs-4"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <i className="bi bi-twitter-x"></i>
+                                    </a>
+                                    <a
+                                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`}
+                                        target="_blank"
+                                        className="text-primary fs-4"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <i className="bi bi-facebook"></i>
+                                    </a>
+                                    <button
+                                        onClick={handleCopyLink}
+                                        className="btn btn-link p-0 text-dark fs-4"
+                                    >
+                                        <i className="bi bi-link-45deg"></i>
+                                    </button>
+                                </div>
+                            </div>
 
                             {/* Content */}
                             <div className="card-text fs-6 text-justify" style={{ lineHeight: '1.8' }}>
@@ -86,7 +132,7 @@ export default function BeritaKKN() {
                                 <div className="d-flex flex-column justify-content-center align-items-center my-4">
                                     <Image
                                         src="/kunjungan/4.JPG"
-                                        alt="Kegiatan Membaca Bersama Anak-Anak di Wasis Library & Cafe"
+                                        alt="Pelatihan Microsoft Word"
                                         width={800}
                                         height={400}
                                         className="rounded"
@@ -124,6 +170,25 @@ export default function BeritaKKN() {
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            {/* Toast Notification */}
+            <div
+                className={`toast align-items-center text-bg-success border-0 position-fixed bottom-0 end-0 m-3 ${showToast ? "show" : "hide"}`}
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+            >
+                <div className="d-flex">
+                    <div className="toast-body">
+                        ✅ Link berhasil disalin!
+                    </div>
+                    <button
+                        type="button"
+                        className="btn-close btn-close-white me-2 m-auto"
+                        onClick={() => setShowToast(false)}
+                    ></button>
                 </div>
             </div>
         </div>
